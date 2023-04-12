@@ -1,0 +1,117 @@
+body{
+    font-family: 'poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    
+}
+
+.carrossel{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    
+}
+
+.carrossel .imagem{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: none;
+    position: fixed;
+
+    animation: mudarImagem 0.7s;
+}
+
+.carrossel .imagem.ativa{
+    display: block;
+
+}
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-evenly;
+}
+
+.informacoes .logo{
+    max-width: 200px;
+    filter: invert(1);
+    border-bottom: 80px;
+    margin: 20px;
+    background: transparent;
+}
+.informacoes .descricao{
+    color: black;
+    line-height: 30px;
+    width: 49%;
+    font-size: 24px;
+    margin: 20px;
+    
+
+}
+.trailer{
+    display: flex;
+    justify-content: center;
+    border: 1px solid white;
+    padding: 0 auto;
+    background-color: red;
+    margin: 16px;
+    width: 130px;
+    border-radius: 30%;
+    color: white;
+    
+}
+.botoes-carrossel{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.botao{
+    border: 2px solid transparent;
+    border-radius: 50%;
+    color: white;
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    cursor: pointer;
+    border-color: green;
+    
+}
+.botoes-carrossel .botao.selecionado{
+    background-color: white;
+}
+
+
+@keyframes mudarImagem{
+    from{
+        opacity: 0.85;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .conteudo{
+        width: 300px;
+        font-size: 15px;
+    }
+    
+}
+
+    
+
+
+   
+    
+
+    
+
+    
+
+
+    
+    
+
+
